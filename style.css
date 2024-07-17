@@ -1,6 +1,14 @@
 .c-press{
  
+        transition: 0.1s ; 
     }
 .c-press:hover{
-    background: #000 !important ;   
+    background: #3d3d3d !important ;  
+
+    font-weight: bold !important;
+}
+
+.result-text {
+    font-size: 27px !important;
+    font-weight: bold !important;
 }
