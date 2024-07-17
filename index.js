@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   function handle_double_element_bug(value, element) {
-    (lastButtonWasOperator) ? alert("you cant use double element: " + value) : (resultDisplay.innerText += element);
+    (lastButtonWasOperator) ? alert("You can't use double operator: " + value) : (resultDisplay.innerText += element);
       lastButtonWasOperator = true;
     }
     
@@ -48,15 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
               /[^-()\d/*+.]/g,
               ""
             );
-            if (lastButtonWasOperator == true) {
-              alert("you cant use double element");
-            } else {
-              lastButtonWasOperator = true;
-            }
-            lastButtonWasOperator
-              ? alert("you cant use double element: " + value)
-              : (resultDisplay.innerText = eval(expression));
-            lastButtonWasOperator = true;
+            resultDisplay.innerText = eval(expression)
+ 
+            
           } catch (error) {
             resultDisplay.innerText = "Error";
           }
