@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+
+    <!-- import css file and bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" /> 
+
+</head>
+<body class="bg-light">
+    
+<h1 class="text-center mt-5 fw-bold "> Calculator </h1>
+
+    <!-- START Calculator Monitor Section -->
+<div class="container p-sm-5">
+    <div class="row mx-5">
+        <div id="result" class="col  px-4 m-2 mt-3 rounded-4 py-4 border border-5 border-dark fs-5 font-weight-bold align-content-center result-text"></div>          
+    </div>
+    <!-- END Calculator Monitor Section -->
+
+    <!--START Calculator Buttons Section -->
+    <div class="row mx-5 text-center">
+        <div id="btn-num-1" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="1">1</div>
+        <div id="btn-num-2" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="2">2</div>
+        <div id="btn-num-3" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="3">3</div>
+     
+        <div id="btn-Division" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-2 rounded-5  c-press"  data-value="÷">÷</div>
+    </div>
+    <div class="row mx-5 text-center">
+        <div id="btn-num-4" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="4">4</div>
+        <div id="btn-num-5" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="5">5</div>
+        <div id="btn-num-6" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="6">6</div>
+     
+        <div id="btn-multiplication" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="×">×</div>
+    </div>
+    <div class="row mx-5 text-center">
+        <div id="btn-num-7" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="7">7</div>
+        <div id="btn-num-8" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="8">8</div>
+        <div id="btn-num-9" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="9">9</div>
+      
+        <div id="btn-subtraction" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-2 rounded-5  c-press"  data-value="-">−</div>
+    </div>
+
+    <div class="row mx-5 text-center">
+        <div id="btn-num-000" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press" data-value="000" >000</div>
+        <div id="btn-num-0" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-4 rounded-5  c-press"  data-value="0">0</div>
+        <div id="btn-num-dot" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-2 rounded-5  c-press"  data-value=".">.</div>
+       
+        <div id="btn-Total" class="col bg-dark text-white p-3 m-2 mt-3 align-content-center fs-2 rounded-5  c-press"  data-value="+">+</div>
+    </div>
+    <div class="row mx-5">
+        <div id="btn-clear" class="col  px-4 m-2 mt-3 bg-dark rounded-4 py-4 fs-5 align-self-center result-text text-white text-center  c-press" data-value="del">clean</div>
+        <div id="btn-calculate" class="col  px-4 m-2 mt-3 bg-dark rounded-4 py-4 fs-5 align-self-center result-text text-white text-center  c-press" data-value="=">calculate = </div>
+        
+    </div>
+</div>
+<!--END Calculator Buttons Section -->
+
+<!-- Message Box -->
+<div class="m-md-5"> 
+    <p class="h1 fs-2 rounded rounded-2 bg-success fw-bold text-white d-inline m-3 p-3 "> Developer Message </p>
+    <p class="ms-5 fs-3 result-text mt-5"> This is merely a test project and it may contain bugs. Any assistance to improve the performance of this code and enhance the program is welcome: </p>
+    <p class="ms-5 result-text">  <a class="me-3" href="https://github.com/Rspayx/calculator"> GitHub   </a>  <a class="ms-3" href="https://www.linkedin.com/in/rezadadfarr/"> LinkedIn </a> </p>
+  
+</div>
+
+    <!-- import js file -->
+<script src="index.js"> </script> 
+
+</body>
+</html>
