@@ -42,6 +42,6 @@ Try to avoid changing languages or frameworks in your project unless absolutely 
 The main goal of these guidelines is to prevent your code from becoming bloated and excessively large. However, if following these rules leads to improving the quality of your code and project, you can deviate from them and implement the best type of code.
 
 
-###The End 
+### The End 
 
 
