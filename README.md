@@ -28,13 +28,13 @@ Try to avoid introducing complexity into your code as much as possible. This als
 To prevent the project size from increasing unnecessarily, avoid using heavy content such as large images, videos, GIFs, etc., as much as possible.
 **However**, if absolutely necessary, you can use very limited and lightweight animated (video, GIF, etc.) and non-animated images.
 
-#### 4- Code dynamism and avoiding unnecessary code.
+#### 4- Code dynamism and avoiding unnecessary code:
 Write your code as dynamically as possible and avoid unnecessary code that simply increases size and introduces performance issues.
 
-#### 5- Avoid using unnecessary and heavy libraries.
+#### 5- Avoid using unnecessary and heavy libraries: 
 Try to avoid heavy and unnecessary libraries that are not essential for the project and do not justify their use in terms of size and utility.
 
-#### 6- Using languages and frameworks used in the project.
+#### 6- Using languages and frameworks used in the project:
 Try to avoid changing languages or frameworks in your project unless absolutely necessary. For example, refrain from replacing Bootstrap with Tailwind CSS 
 **unless there's a serious need and it significantly improves your code.**
 
