@@ -1,21 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var buttons = document.querySelectorAll(".c-press"); 
+  var buttons = document.querySelectorAll(".c-press");
   var resultDisplay = document.getElementById("result");
   var lastButtonWasOperator = true;
 
+  //Function for Controlling Repeated operator Bugs
+  function Handling_double_element_bug(value, element) {
+    lastButtonWasOperator
+      ? alert("You can't use double operator: " + value)
+      : (resultDisplay.innerText += element);
+    lastButtonWasOperator = true;
+  }
 
-  function handle_double_element_bug(value, element) {
-    (lastButtonWasOperator) ? alert("You can't use double operator: " + value) : (resultDisplay.innerText += element);
-      lastButtonWasOperator = true;
-    }
-    
-
-  
   buttons.forEach(function (button) {
     button.addEventListener("click", function () {
       var value = button.getAttribute("data-value");
       console.log("Button " + value + " clicked");
 
+        // Controlling Button Functionality
       switch (value) {
         case "1":
         case "2":
@@ -33,26 +34,28 @@ document.addEventListener("DOMContentLoaded", function () {
           lastButtonWasOperator = false;
           break;
         case "÷":
-          handle_double_element_bug(value, "/");
+          Handling_double_element_bug(value, "/");
           break;
         case "×":
-          handle_double_element_bug(value, "*");
+          Handling_double_element_bug(value, "*");
           break;
         case "+":
         case "-":
-          handle_double_element_bug(value, value);
+          Handling_double_element_bug(value, value);
+          break;
+        case "del":
+          resultDisplay.innerText = "";
           break;
         case "=":
           try {
-            var expression = resultDisplay.innerText.replace(
-              /[^-()\d/*+.]/g,
-              ""
-            );
-            resultDisplay.innerText = eval(expression)
- 
-            
+            if (resultDisplay.innerText == "") {
+              alert("please enter a number");
+            } else {
+              var expression = resultDisplay.innerText.replace(/[^-()\d/*+.]/g);
+              resultDisplay.innerText = eval(expression);
+            }
           } catch (error) {
-            resultDisplay.innerText = "Error";
+            alert("ERROR");
           }
           break;
         default:
@@ -61,6 +64,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
-

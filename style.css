@@ -11,4 +11,23 @@
 .result-text {
     font-size: 27px !important;
     font-weight: bold !important;
+    overflow :auto;
+    padding-bottom: 3px;
+    min-height: 100px;
+}
+
+.result-text::-webkit-scrollbar{
+    height: 7px;
+    background-color: transparent;
+    width: 10px;
+
+}
+.result-text::-webkit-scrollbar-thumb{
+    width: 100px;
+    background-color: rgb(145, 43, 43);
+    border-radius: 100px;
+}
+  
+::selection{
+    display: none ;
 }
